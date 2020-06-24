@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/utilities.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <title>Blog</title>
+  </head>
+  <body>
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-landmark"></i>Capital</span
+          >Finance<span class="text-primary"> LV</span>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cases">Cases</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Blog</h1>
+      </div>
+    </header>
+
+    <main>
+      <article class="flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/blog/blog2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-dark">
+              <h4>Opinion</h4>
+              <h2>Retirement Planning</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>William Nelson</strong> | May 21st 2020
+              </p>
+              <p>
+                Where will your retirement money come from? If you’re like most
+                people, qualified-retirement plans, Social Security, and
+                personal savings and investments are expected to play a role.
+                Once you have estimated the amount of money you may need for
+                retirement, a sound approach involves taking a close look at
+                your potential retirement-income sources.
+              </p>
+              <h3>1.Retirement Researcher</h3>
+              <p>
+                If you’re looking for something a little bit different and a lot
+                more serious, Retirement Researcher might be for you. Author
+                Wade Pfau, has a nice set of credentials. He has a Ph.D. in
+                economics from Princeton, he’s the Director of Retirement
+                Research for McLean Asset Management and Professor of Retirement
+                Income at The American College.
+              </p>
+              <p>
+                At Retirement Researcher, you’ll find scores of blog posts
+                inspired by his, you guessed it, retirement research. Current
+                topics include longevity insurance, annuity pricing, how to make
+                your savings last without staying in the workforce, and the
+                importance of getting financial advice.
+              </p>
+              <p>
+                Pfau’s blog is just about as straightforward as they come. You
+                won’t find any cartoon figures or nonsense. What you will find
+                is a lot of information about planning your retirement the
+                smartest way.
+              </p>
+              <h3>2. Freakonomics</h3>
+              <p>
+                If all this blog had was its name, it’d be worth a click.
+                Fortunately, it’s got a lot more than that. Freakonomics is an
+                irreverent, smart financial blog that’s authored by economist
+                Steven D. Levitt and writer Stephen J. Dubner.
+              </p>
+              <p>
+                Spawned by the book of the same name, then SuperFreakonomics,
+                then When to Rob a Bank (that’s a real book, by the way), this
+                New York Times bestselling duo created their award-winning
+                financial blog that focuses more on money in general. But as
+                Chatzky says, their musing on “seemingly random things” is well
+                worth the read.
+              </p>
+              <p>
+                Trending right now are podcasts and posts on the economics of
+                sleep, the healthcare revolution, the World Bank, and whether
+                early retirement is bad for your health. This is a random blog
+                with a lot of podcasts, and you never know what they’ll talk
+                about from one day to the next.
+              </p>
+              <h3>4. Can I Retire Yet?</h3>
+              <p>
+                As Darrow Kirkpatrick’s tagline, “Save More – Invest Smart –
+                Retire Sooner,” implies, Can I Retire Yet? is about getting
+                retired as soon as possible.
+              </p>
+              <p>
+                Kirkpatrick combines his Eagle Scout values and live simple
+                philosophy with a clear eyed view of retirement resources to
+                offer advice and insight to help you retire early, but securely.
+                With retirement calculator reviews and advice that covers
+                everything from leisure activities to deep dives into investment
+                portfolios, the mission of Can I Retire Yet is to help others
+                become financially independent.
+              </p>
+              <h3>5. NewRetirement</h3>
+              <p>
+                Of course we want to mention a little something about ourselves.
+                NewRetirement was founded because our own parents needed
+                straightforward advice about how to make retirement work and we
+                realized that there was no one resource talking about all of the
+                various retirement planning strategies: from tapping into home
+                equity and finding a retirement job to exploring the best ways
+                invest to maximize retirement income or get rid of debt. We have
+                grown to have hundreds of thousands of readers and users of our
+                award winning retirement planning calculator.
+              </p>
+              <p>
+                Our team applies our deep knowledge of personal finance and
+                decision support software to provide articles and tools that
+                enable you to discover strategies for improving your emotional
+                and physical health, happiness and retirement wealth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copy &copy Capital Finance LV</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>

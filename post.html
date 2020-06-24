@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/utilities.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <title>Post One</title>
+  </head>
+  <body>
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-landmark"></i>Capital</span
+          >Finance<span class="text-primary"> LV</span>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cases">Cases</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Blog</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="post">
+        <h2>Why A Bespoke Solution Can Sometimes Be The Only Solution</h2>
+        <p class="meta">
+          <i class="fas fa-user"></i> Posted by <strong>Robert Lee</strong> |
+          May 31st 2020
+        </p>
+        <img src="./img/blog/blog1.jpg" alt="" />
+        <p>
+          An off-the-shelf solution is a solution that you purchase (often
+          through an account and subscription) to use 'as-is' - or
+          off-the-shelf. Sometimes these solutions offer you the ability to
+          customise the approach and/or the look and feel; but on the whole, you
+          simply take the system and make use of it out of the box. These
+          solutions are often built to satisfy a larger client-base and you will
+          often find that the deliverables/features are more generic.
+        </p>
+        <p>
+          Alternatively a bespoke solution (or custom solution) is one that is
+          built specifically around the requirements of the project. Rather than
+          adhering to a wider range of generic requirements; the bespoke
+          solution focuses on the core deliverables the client requires and
+          delivers on the specifics.
+        </p>
+        <p>
+          At DCODE, we work with both off-the-shelf solutions as well as bespoke
+          solutions - there is often always a case for each alternative in every
+          project. However, in some instances only a bespoke solution will do.
+        </p>
+        <p>
+          If your business is relying on the software to deliver a
+          service/solution (and interact with a consumer); then a bespoke system
+          can allow you to deliver that service with your own level of
+          individuality - inline with the way you have differentiated yourself
+          from the competition. Only a bespoke solution can offer this. If you
+          choose to use an off-the-shelf solution, then often you are conforming
+          to the same "standards"/"methodology" as others who use that solution.
+          A bespoke solution can allow you to differentiate yourself and provide
+          a point of difference by enforcing your differentiated strategy as
+          part of your systems/processes.
+        </p>
+        <p>
+          Before developing your next solution, it is important that you
+          evaluate alternatives on both sides of the development spectrum and
+          chose the option that best suits the requirements of the system.
+        </p>
+        <p>
+          If you are looking to develop a system/solution for your business,
+          contact us to find out how we can be of assistance. As IT Consultants,
+          DCODE can assist you in identifying your system requirements and then
+          determining the best alternatives available. We can help you to
+          evaluate Cloud Apps and/or Custom Software solutions and chose the one
+          that suits you. And with our in-house development team, we can either
+          implement a Cloud App or develop and launch your Custom Software
+          solution. If you're interested in rationalising your operations with
+          technology,
+        </p>
+        <hr />
+        <p>Get updates, tips and industry news delivered directly to you</p>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copy &copy Capital Finance LV</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>

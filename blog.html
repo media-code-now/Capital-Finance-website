@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/utilities.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <title>Blog</title>
+  </head>
+  <body>
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-landmark"></i>Capital</span
+          >Finance<span class="text-primary"> LV</span>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cases">Cases</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Blog</h1>
+      </div>
+    </header>
+
+    <main>
+      <!-- About:Solutions -->
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/blog/blog1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h4>Blog</h4>
+              <h2>We Provide The Bespoke Solution</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>Robert Lee</strong> | May 31st 2020
+              </p>
+              <p>
+                An off-the-shelf solution is a solution that you purchase (often
+                through an account and subscription) to use 'as-is' - or
+                off-the-shelf. Sometimes these solutions offer you the ability
+                to customise the approach and/or the look and feel; but on the
+                whole, you simply take the system and make use of it out of the
+                box. These solutions are often built to satisfy a larger
+                client-base and you will often find that the
+                deliverables/features are more generic.
+              </p>
+              <a href="post.html" class="btn btn-dark">
+                <i class="fas fa chevron"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/blog/blog2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-dark">
+              <h4>Opinion</h4>
+              <h2>Retirement Planning</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>William Nelson</strong> | May 21st 2020
+              </p>
+              <p>
+                Where will your retirement money come from? If you’re like most
+                people, qualified-retirement plans, Social Security, and
+                personal savings and investments are expected to play a role.
+                Once you have estimated the amount of money you may need for
+                retirement, a sound approach involves taking a close look at
+                your potential retirement-income sources.
+              </p>
+              <a href="blog3.html" class="btn btn-light">
+                <i class="fas fa chevron"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/blog/blog3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h4>Opinion</h4>
+              <h2>Invest in Stocks</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>Kathlyn Roland</strong> | April 25th 2020
+              </p>
+              <p>
+                Investing in stocks is an excellent way to grow wealth. For
+                long-term investors, stocks are a good investment even during
+                periods of market volatility — a stock market downturn like the
+                one we've seen this year simply means that many stocks are on
+                sale.
+              </p>
+              <a href="blog2.html" class="btn btn-dark">
+                <i class="fas fa chevron"></i>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copy &copy Capital Finance LV</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>

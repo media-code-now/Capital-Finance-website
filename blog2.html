@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/utilities.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <title>Opinion</title>
+  </head>
+  <body>
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-landmark"></i>Capital</span
+          >Finance<span class="text-primary"> LV</span>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cases">Cases</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Opinion</h1>
+      </div>
+    </header>
+
+    <main>
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/blog/blog3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h4>Opinion</h4>
+              <h2>Invest in Stocks</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i> Posted by
+                <strong>Kathlyn Roland</strong> | April 25th 2020
+              </p>
+              <p>
+                Investing in stocks is an excellent way to grow wealth. For
+                long-term investors, stocks are a good investment even during
+                periods of market volatility — a stock market downturn like the
+                one we've seen this year simply means that many stocks are on
+                sale.
+              </p>
+              <h3>Step 1. Decide how you want to invest in stocks</h3>
+              <p>
+                There are several ways to approach stock investing. Choose the
+                option below that best represents how you want to invest, and
+                how hands-on you'd like to be in picking and choosing the stocks
+                you invest in.
+              </p>
+              <h3>Step 2. Open an investing account</h3>
+              <p>
+                Generally speaking, to invest in stocks, you need an investment
+                account. For the hands-on types, this usually means a brokerage
+                account. For those who would like a little help, opening an
+                account through a robo-advisor is a sensible option. We break
+                down both processes below.
+              </p>
+              <p>
+                An important point: Both brokers and robo-advisors allow you to
+                open an account with very little money — we list several
+                providers with low or no account minimum below.
+              </p>
+              <h3>
+                Step 3. Know the difference between stocks and stock mutual
+                funds
+              </h3>
+              <p>
+                The upside of stock mutual funds is that they are inherently
+                diversified, which lessens your risk. For the vast majority of
+                investors — particularly those who are investing their
+                retirement savings — a portfolio comprised mostly of mutual
+                funds is the clear choice.
+              </p>
+              <p>
+                But mutual funds are unlikely to rise in meteoric fashion as
+                some individual stocks might. The upside of individual stocks is
+                that a wise pick can pay off handsomely, but the odds that any
+                individual stock will make you rich are exceedingly slim.
+              </p>
+              <h3>Step 4. Set a budget for your stock investment</h3>
+              <p>
+                How much money do I need to start investing in stocks? The
+                amount of money you need to buy an individual stock depends on
+                how expensive the shares are. (Share prices can range from just
+                a few dollars to a few thousand dollars.) If you want mutual
+                funds and have a small budget, an exchange-traded fund (ETF) may
+                be your best bet. Mutual funds often have minimums of $1,000 or
+                more, but ETFs trade like a stock, which means you purchase them
+                for a share price — in some cases, less than $100.
+              </p>
+              <p>
+                How much money should I invest in stocks? If you’re investing
+                through funds — have we mentioned this is our preference? — you
+                can allocate a fairly large portion of your portfolio toward
+                stock funds, especially if you have a long time horizon. A
+                30-year-old investing for retirement might have 80% of his or
+                her portfolio in stock funds; the rest would be in bond funds.
+                Individual stocks are another story. We’d recommend keeping
+                these to 10% or less of your investment portfolio.
+              </p>
+              <h3>Step 5. Start investing</h3>
+              <p>
+                Stock investing is filled with intricate strategies and
+                approaches, yet some of the most successful investors have done
+                little more than stick with the basics. That generally means
+                using funds for the bulk of your portfolio — Warren Buffett has
+                famously said a low-cost S&P 500 index fund is the best
+                investment most Americans can make — and choosing individual
+                stocks only if you believe in the company’s potential for
+                long-term growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copy &copy Capital Finance LV</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
